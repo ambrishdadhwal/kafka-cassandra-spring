@@ -1,5 +1,11 @@
+## Configure Cassandra on Windows 
+#1 Download cassandra binaries from official website.
+#2 Set path of {cassandra}/bin folder in Environment Variables.
+#3 Open Linux terminal in windows (prefer Ubuntu, since you can not run cassandra DB on windows . You will need Docker image & container from Datastax)
+#4 Run command 'cassandra' (it will start cassandra service)
+#5 Run command 'cqlsh' , this will open up shell for cassandra DB.
 
-## Windows scripts
+## Windows scripts for Kafka
 
 Windows scripts for consumer & producer
 
