@@ -1,3 +1,6 @@
+## Run Spring boot app with Kafka & Cassandra DB.
+Read data from kafka real time stream 'WikiMedia' and insert data to cassandra DB
+
 ## Run Cassandra on Windows
 Download datastax from here 'https://datastax-community-edition.software.informer.com/download'
 After installing search for 'Cassandra SQL Shell' in windows search bar
