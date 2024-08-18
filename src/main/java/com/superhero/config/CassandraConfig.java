@@ -1,4 +1,4 @@
-package com.superhero;
+package com.superhero.config;
 
 import java.util.Collections;
 import java.util.List;

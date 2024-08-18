@@ -1,0 +1,41 @@
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          cassandra:
+            core:
+              cql:
+                CqlTemplate: DEBUG
+spring:
+  data:
+    cassandra:
+      contact-points: localhost
+      keyspace-name: employee
+      port: 9042
+
+  profiles:
+    active: local
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  kafka:
+    template:
+      default-topic: library-events
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      enable-idempotence: false
+      retries: 5
+      properties:
+        acks: all
+        retries: 10
+        retry.backoff.ms: 1000
+        enable.idempotence: false
+    admin:
+      properties:
+        bootstrap.servers: localhost:9092
+---

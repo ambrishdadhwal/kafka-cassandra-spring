@@ -1,4 +1,4 @@
-package com.superhero;
+package com.superhero.config;
 
 import java.util.Arrays;
 import java.util.List;
